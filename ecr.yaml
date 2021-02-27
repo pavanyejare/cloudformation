@@ -7,3 +7,6 @@ Resources:
       RepositoryName: "test-repository"
       ImageScanningConfiguration: 
         ScanOnPush: "true"
+Outputs:    
+  Arn:
+    Value: !GetAtt MyECRRepo.Arn
