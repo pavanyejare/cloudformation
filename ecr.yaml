@@ -9,4 +9,4 @@ Resources:
         ScanOnPush: "true"
 Outputs:    
   Arn:
-    Value: !Join [".",[!Sub "${AWS::AccountId}", "dkr", "ecr", !Sub "${AWS::Region}", "amazonaws", "com"],  !Join [ "/", [ "test-repository" ] ]]
+    Value: !Join [".",[!Sub "${AWS::AccountId}", "dkr", "ecr", !Sub "${AWS::Region}", "amazonaws", "com",  !Join [ "/", [ "test-repository" ] ]]]
